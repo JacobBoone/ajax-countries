@@ -2,10 +2,11 @@ extends layout
 
 block content
 	h1 Ajax Countries
-	form#blog-form(action="/blogSubmission" method="post")
+	form#blog-form(action="/search" method="post")
 					.form-group
 						input.form-control(name="search" type="text" placeholder="Search Here" rows=5) 
 					.form-group
 						//- input.btn.btn-primary(type="submit")
 						button.btn.btn-primary(type="submit") Submit
-	button.load-countries Load Countries
+	button.btn.btn-primary.load-countries Load Countries
+	div.list-countries

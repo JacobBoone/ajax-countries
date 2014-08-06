@@ -7,7 +7,7 @@ var renderCountries = function(countries) {
 
   // Loop through all the countries and render a list item for them
   for (var i = 0; i < countries.length; i++) {
-    $('.load-countries').after('<li class="countryList">' + 'Country:  ' + '<strong>'+ countries[i].name+'</strong>' + '  Region:  ' + '<strong>'+ countries[i].region +'</strong>'+'</li>');
+    $('.list-countries').append('<li class="countryList">' + 'Country:  ' + '<strong>'+ countries[i].name+'</strong>' + '  Region:  ' + '<strong>'+ countries[i].region +'</strong>'+'</li>');
   }
 }
 
