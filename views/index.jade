@@ -4,9 +4,9 @@ block content
 	h1 Ajax Countries
 	form#blog-form(action="/search" method="post")
 					.form-group
-						input.form-control(name="search" type="text" placeholder="Search Here" rows=5) 
+						input.form-control.item-search(name="search" type="text" placeholder="Search Here" rows=5) 
 					.form-group
 						//- input.btn.btn-primary(type="submit")
-						button.btn.btn-primary(type="submit") Submit
+						button.btn.btn-primary.search-button(type="submit") Submit
 	button.btn.btn-primary.load-countries Load Countries
 	div.list-countries
